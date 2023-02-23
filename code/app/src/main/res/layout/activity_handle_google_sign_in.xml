@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HandleGoogleSignInActivity"
+    android:background="@drawable/appbg">
+
+    <TextView
+        android:id="@+id/textViewGoogleBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/BirthDate"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonDateGoogle"
+        style="?android:spinnerStyle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:onClick="openDatePicker"
+        android:text="JAN 01 2020"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGoogleBirthDate"
+        app:layout_constraintStart_toStartOf="@+id/textViewGoogleBirthDate" />
+
+
+    <TextView
+        android:id="@+id/textViewPhoneNumGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="phone number"
+        android:textColor="#1B1A1A"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDateGoogle"
+        app:layout_constraintStart_toStartOf="@+id/buttonDateGoogle"/>
+
+    <EditText
+        android:id="@+id/phoneNumberGoogle"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="#5CCFCBCB"
+        android:ems="10"
+        android:hint="phone_number"
+        android:inputType="phone"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPhoneNumGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNumGoogle" />
+
+    <Button
+        android:id="@+id/buttonConfirmGoogle"
+        android:layout_width="199dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="55dp"
+        android:text="Confirm"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberGoogle"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberGoogle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/activity_pop">
+
+    <TextView
+        android:id="@+id/textViewRowActivityName"
+        style="@style/customTextTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/ActivtyName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        style="@style/customTextTest"
+        android:text="@string/ActivityDescription"
+        android:maxWidth = "200sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewRowActivityName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowActivityName" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityEffortString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        style="@style/customTextTest"
+        android:text="expected effort:"
+        app:layout_constraintStart_toStartOf="@+id/textViewRowActivityName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowActivityDescription" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityEffort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Very hard"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewRowActivityEffortString"
+        app:layout_constraintTop_toTopOf="@+id/textViewRowActivityEffortString" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityExTimeString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="expected time:"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="@+id/textViewRowActivityEffortString"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowActivityEffortString" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityExTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="less than 3 hours"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewRowActivityExTimeString"
+        app:layout_constraintTop_toTopOf="@+id/textViewRowActivityExTimeString" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityCategoryString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="50dp"
+        android:text="category:"
+        style="@style/customTextTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountry" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="less than 3 hours"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="@+id/textViewRowActivityCategoryString"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowActivityCategoryString" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityAgeRestriction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="age not restricted"
+        style="@style/customTextTest"
+        app:layout_constraintEnd_toEndOf="@id/textViewRowActivityCategory"
+        app:layout_constraintTop_toBottomOf="@id/textViewRowActivityCategory" />
+
+    <TextView
+        android:id="@+id/textViewWhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="When:"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="@+id/textViewRowActivityExTimeString"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowActivityExTimeString" />
+
+    <TextView
+        android:id="@+id/textViewRowActivityStartingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="15/12/2022, 15:30"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewWhen"
+        app:layout_constraintTop_toTopOf="@+id/textViewWhen" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonJoinActivity" />
+
+    <Button
+        android:id="@+id/buttonJoinActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/JoinActivity"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewImageOneRow" />
+
+    <Button
+        android:id="@+id/buttonUnJoinActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="un-Join"
+        app:backgroundTint="#BA1E1E"
+        app:layout_constraintEnd_toStartOf="@+id/buttonJoinActivity"
+        app:layout_constraintTop_toTopOf="@+id/buttonJoinActivity" />
+
+    <ImageView
+        android:id="@+id/imageViewLocation"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLocation"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRowActivityCategoryString"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation"
+        app:srcCompat="@drawable/pin" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/location"
+        android:textColor="@color/BLUE"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLocation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Country"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="@+id/imageViewLocation"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=",City"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewCountry"
+        app:layout_constraintTop_toTopOf="@+id/textViewCountry" />
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:text="4 Km"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewLocation"
+        app:layout_constraintTop_toTopOf="@+id/textViewLocation" />
+
+    <ImageView
+        android:id="@+id/imageViewCreator"
+        android:layout_width="19dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewWhen"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWhen"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textViewCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="@string/Host"
+        style="@style/customTextTest"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewCreator"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCreator"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCreator" />
+
+    <ImageView
+        android:id="@+id/imageViewImageOneRow"
+        android:layout_width="212dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCreator"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRowActivityStartingTime"
+        app:srcCompat="@drawable/activity_bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

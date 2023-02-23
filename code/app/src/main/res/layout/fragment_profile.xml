@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.profile.HomeFragment">
+
+
+        <TextView
+            android:id="@+id/textViewJoinedAct"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="joined activities"
+            app:layout_constraintStart_toStartOf="@+id/buttonShowParticipant"
+            app:layout_constraintTop_toBottomOf="@+id/buttonShowParticipant" />
+
+        <Spinner
+            android:id="@+id/spinnerHostedAct"
+            android:layout_width="126dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/EffortList"
+            app:layout_constraintStart_toStartOf="@+id/textViewHostedAct"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHostedAct" />
+
+        <Spinner
+            android:id="@+id/spinnerParticipants"
+            android:layout_width="126dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/participants"
+            app:layout_constraintStart_toStartOf="@+id/textViewParticipants"
+            app:layout_constraintTop_toBottomOf="@+id/textViewParticipants" />
+
+        <Spinner
+            android:id="@+id/spinnerJoinedAct"
+            android:layout_width="126dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="13dp"
+            android:contentDescription="@string/EffortList"
+            app:layout_constraintStart_toStartOf="@+id/textViewJoinedAct"
+            app:layout_constraintTop_toBottomOf="@+id/textViewJoinedAct" />
+
+        <Button
+            android:id="@+id/buttonGoTojoinedAct"
+            style="@style/customButtonShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="View activity"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@+id/spinnerJoinedAct"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerJoinedAct" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMedical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="medical taining"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxBilingual" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCocking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="cocking"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMedical" />
+
+        <CheckBox
+            android:id="@+id/checkBoxOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="other"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxCocking" />
+
+        <TextView
+            android:id="@+id/textViewHelloUser"
+            style="@style/customTextHelloUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="32dp"
+            android:text="Hello user!"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonShowSkills"
+            style="@style/customButtonShowSkills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="my skills"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/buttonShowGender"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxNotSay"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/buttonHideSkills"
+            style="@style/customButtonHideSkills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="my skills"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@id/buttonShowGender"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxNotSay" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHandCraft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="hand craft"
+            app:layout_constraintEnd_toEndOf="@+id/buttonShowSkills"
+            app:layout_constraintStart_toStartOf="@+id/buttonShowSkills"
+            app:layout_constraintTop_toBottomOf="@+id/buttonShowSkills" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="sport"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxHandCraft" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTeach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="teach"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxSport"
+            tools:layout_editor_absoluteX="45dp" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHardWorker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="hard worker"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxTeach" />
+
+        <CheckBox
+            android:id="@+id/checkBoxArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="artist"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxHardWorker" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFixer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="fix things"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxArtist" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBilingual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="bilingual "
+            app:layout_constraintStart_toStartOf="@+id/checkBoxHandCraft"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxFixer" />
+
+        <Button
+            android:id="@+id/buttonHideGender"
+            style="@style/customButtonHideSkills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:text="Gender"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonUploadProfilePic"
+            tools:ignore="DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/buttonShowGender"
+            style="@style/customButtonShowSkills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="50dp"
+            android:text="Gender"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/buttonUploadProfilePic" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Male"
+            app:layout_constraintEnd_toEndOf="@+id/buttonHideGender"
+            app:layout_constraintStart_toStartOf="@+id/buttonShowGender"
+            app:layout_constraintTop_toBottomOf="@+id/buttonShowGender" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Female"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxMale"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMale" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNotSay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="rather not say"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxFemale"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxFemale" />
+
+        <TextView
+            android:id="@+id/textViewHostedAct"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:text="hosted activities"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfilePic"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMessagesnumber" />
+
+        <Button
+            android:id="@+id/buttonGoToHostedAct"
+            style="@style/customButtonEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Edit activity"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@+id/spinnerHostedAct"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerHostedAct" />
+
+        <TextView
+            android:id="@+id/textViewParticipants"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="participants"
+            app:layout_constraintStart_toStartOf="@+id/buttonGoToHostedAct"
+            app:layout_constraintTop_toBottomOf="@+id/buttonGoToHostedAct" />
+
+        <Button
+            android:id="@+id/buttonShowParticipant"
+            style="@style/customButtonProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Show profile"
+            app:backgroundTint="@null"
+            app:layout_constraintStart_toStartOf="@+id/spinnerParticipants"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerParticipants" />
+
+        <ImageView
+            android:id="@+id/imageViewProfilePic"
+            android:layout_width="109dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewHelloUser"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMessagesnumber"
+            app:srcCompat="@drawable/profile" />
+
+        <Button
+            android:id="@+id/buttonUploadProfilePic"
+            style="@style/customButtonInsertImage"
+            android:layout_width="101dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="1dp"
+            android:text="new"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewProfilePic"
+            app:layout_constraintStart_toStartOf="@+id/imageViewProfilePic"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProfilePic" />
+
+        <TextView
+            android:id="@+id/textViewParticipantsNumber"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@id/textViewParticipants"
+            app:layout_constraintTop_toTopOf="@id/textViewParticipants" />
+
+        <Button
+            android:id="@+id/buttonDeleteProfileImage"
+            style="@style/customButtonDeleteImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/DeleteActivity"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toStartOf="@id/imageViewProfilePic"
+            app:layout_constraintTop_toTopOf="@id/imageViewProfilePic" />
+
+        <TextView
+            android:id="@+id/textViewMessagesnumber"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="0"
+            app:layout_constraintStart_toEndOf="@id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="you have"
+            app:layout_constraintStart_toStartOf="@+id/textViewHelloUser"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHelloUser" />
+
+        <TextView
+            android:id="@+id/textView13"
+            style="@style/customTextTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="new messages in inbox."
+            app:layout_constraintStart_toEndOf="@+id/textViewMessagesnumber"
+            app:layout_constraintTop_toTopOf="@+id/textViewMessagesnumber" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupSkills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="checkBoxHandCraft,checkBoxSport,checkBoxTeach,checkBoxHardWorker,checkBoxArtist,checkBoxFixer,checkBoxBilingual,checkBoxMedical,checkBoxCocking,checkBoxOther"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="checkBoxFemale,checkBoxNotSay,checkBoxMale" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profile">
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.vufinder.ui.profile.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_join_activity"
+        android:name="com.example.vufinder.ui.gallery.JoinActivityFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_join_activity" />
+
+    <fragment
+        android:id="@+id/nav_create_activity"
+        android:name="com.example.vufinder.ui.CreateActivity.CreateActivityFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_create_activity" />
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.example.vufinder.ui.InboxFragment"
+        android:label="@string/Inbox"
+        tools:layout="@layout/fragment_inbox" />
+</navigation>

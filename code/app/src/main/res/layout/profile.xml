@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/user_popview">
+
+    <TextView
+        android:id="@+id/textViewProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Name:"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewProfileNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileName"
+        app:layout_constraintTop_toTopOf="@+id/textViewProfileName" />
+
+    <TextView
+        android:id="@+id/textViewProfileAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Age:"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="@+id/textViewProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileName" />
+
+    <TextView
+        android:id="@+id/textViewProfileAgeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileAge"
+        app:layout_constraintTop_toTopOf="@+id/textViewProfileAge" />
+
+    <TextView
+        android:id="@+id/textViewProfileGenderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Gender: "
+        style="@style/customTextTest"
+        app:layout_constraintStart_toStartOf="@+id/textViewProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileAge" />
+
+    <TextView
+        android:id="@+id/textViewProfileGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        style="@style/customTextTest"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileGenderText"
+        app:layout_constraintTop_toTopOf="@+id/textViewProfileGenderText" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="95dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="70dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewProfileGender"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProfileNameValue"
+        app:srcCompat="@drawable/profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
