@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1044412350776",
+    "project_id": "vufinder-b083c",
+    "storage_bucket": "vufinder-b083c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044412350776:android:1b013c2daa43d710a441cd",
+        "android_client_info": {
+          "package_name": "com.example.vufinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044412350776-6962rkk30e28ieouuho9ugfp8tjbsl7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYhcHANvWiZ_lvPctaGHuzKI7SOsfnA-w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044412350776-6962rkk30e28ieouuho9ugfp8tjbsl7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
